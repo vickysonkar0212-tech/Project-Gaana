@@ -1,0 +1,40 @@
+{
+    "title": "Best Party Songs of 2024",
+    "description" : "",
+    "Author": "Created by Gaana",
+    "songs": [
+      {
+        "id": "1",
+
+        "image": "https://a10.gaanacdn.com/gn_img/albums/VdNW0JMKo5/NW0XXDD2Wo/size_m.jpg",
+        "sub-title": "Bollywood love Ant."
+      },
+      {
+        "id": "2",
+        "image": "https://a10.gaanacdn.com/gn_img/albums/w4MKPgOboj/MKP86a4oKo/size_m.jpg",
+        "title": "Afsos"
+      },
+      {
+        "id": "3",
+        "image": "https://a10.gaanacdn.com/gn_img/albums/XzVWRLKdqR/VWRJVdzyWd/size_m.jpg",
+        "title": "Janne Tu (From Chh..)"
+      },
+      {
+        "id": "4",
+        "image": "https://a10.gaanacdn.com/gn_img/albums/ZaP37RKDy7/P37llQd6WD/size_m_1740065880.webp",
+        "title": "Water"
+      },
+      {
+        "id": "5",
+        "image": "https://a10.gaanacdn.com/gn_img/albums/qa4WEqWP1p/4WEymArVWP/size_m.jpg",
+        "title": "Badri Ki Dhulania"
+      },
+      {
+        "id": "6",
+        "image": "https://a10.gaanacdn.com/gn_img/albums/21GWwrR3pk/GWwkAX0QWp/size_m_1740409545.jpg",
+        "title": "Police"
+      }
+     
+    ]
+    
+  }
