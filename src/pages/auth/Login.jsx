@@ -1,4 +1,4 @@
-   
+
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from "react-router-dom";
@@ -11,47 +11,36 @@ const Login = () => {
   const [password, setPassword] = useState('');
   const [errorMessage, setErrorMessage] = useState("");
   const navigate = useNavigate();
-  
-
-  useEffect(()=>{
-
-const token =localStorage.getItem("token")
-
-if(token){
-  navigate("/")
-}
-},[])
 
 
-const handleContinue = async (e) => {
-  e.preventDefault();
-  try {
-    const res = await axios.post("http://127.0.0.1:5000/auth/login", {
-      email,
-      password
-    });
- localStorage.setItem("token", res.data.token);
-    toast.success(res?.data?.message);
-   
-    console.log("ttt", res ||"login");
-    navigate("/");
-  } catch (error) {
-    toast.error(error?.res?.data?.message || "Login failed");
-    console.log("Error:", error?.res?.data?.data || "Something went wrong");
-  }
-};
+  const handleContinue = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await axios.post("http://127.0.0.1:5000/auth/login", {
+        email,
+        password
+      });
+      localStorage.setItem("accesstoken", response.data.data.token);
 
+      toast.success(response.data.data.message);
 
+      console.log("login", response || "login");
+      navigate("/");
+    } catch (error) {
+      toast.error(error?.response?.data?.message || "Login failed");
+      console.log("Error:", error?.response?.data?.data || "Something went wrong");
+    }
+  };
 
   const isDisabled = email.trim() === '' || password.trim() === '';
 
-    return (
+  return (
 
-        <>
-  <div className="row">
-    <div className="col">
-<div className="card mx-auto login-card">
-  <div className="row login-bg-img">
+    <>
+      <div className="row">
+        <div className="col">
+          <div className="card mx-auto login-card">
+            <div className="row login-bg-img">
               <div className="col text-center top login-text-clr">
                 <h4 className="text-center mt-4">Listen to Gaana Non-Stop</h4>
                 <p className="barlogin">Quick Login</p>
@@ -89,20 +78,20 @@ const handleContinue = async (e) => {
               </div>
             </div>
 
-</div>
+          </div>
 
 
-    </div>
+        </div>
 
 
-     </div>
+      </div>
 
 
 
 
-        
-        
-        </>
-    )
+
+
+    </>
+  )
 }
 export default Login

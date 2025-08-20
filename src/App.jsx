@@ -22,40 +22,45 @@ import OldSongTrend from "./data/OldSong.json";
 // import Login from './pages/auth/Login';
 import Signup from './pages/auth/Signup';
 import Login from './pages/auth/Login';
-import  { Toaster } from 'react-hot-toast';
+import { Toaster } from 'react-hot-toast';
+import ArtistAdd from '../../Admin/Artist/Add';
+import ArtistEdit from '../../Admin/Artist/Edit';
+import ArtistAll from '../../Admin/Artist/Viewall';
 function App() {
   return (
     <>
-        <div><Toaster/> </div>
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Applayout />}>
-          <Route path="/" element={<Home />} />
-          {/* <Route path="/Home" element={<Home />} /> */}
-          <Route path="/Album-song" element={<Album data={AlbumSongData} />} />
-          <Route path="/New-Song" element={<Album data={NewSongData} />} />
-          <Route path="/Podcast" element={<Album data={PodcastSongData} />} />
-          <Route path="/Part" element={<Album data={PartySongData} />} />
+      <div><Toaster /> </div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Applayout />}>
+            <Route path="/" element={<Home />} />
+            {/* <Route path="/Home" element={<Home />} /> */}
+            <Route path="/Album-song" element={<Album data={AlbumSongData} />} />
+            <Route path="/New-Song" element={<Album data={NewSongData} />} />
+            <Route path="/Podcast" element={<Album data={PodcastSongData} />} />
+            <Route path="/Part" element={<Album data={PartySongData} />} />
+            <Route path="/second" element={<Trendinginternal trend={DesignTrend} />} />
+            <Route path="/done" element={<Trendinginternal trend={OldSongTrend} />} />
 
+            <Route path="/Trendinginternal" element={<Trendinginternal />} />
+            <Route path="/OldSlider" element={<OldSlider />} />
+            <Route path="/Radiointernal" element={<Radiointernal />} />
+          </Route>
 
-          <Route path="/second" element={<Trendinginternal trend={DesignTrend} />} />
-          <Route path="/done" element={<Trendinginternal trend={OldSongTrend} />} />
+          <Route path="/slider" element={<CustomSlider />} />
+          <Route path="/responsive" element={<ResponsiveSlider />} />
+          <Route path="/RadioSlider" element={<RadioSlider />} />
+          <Route path="/layout" element={<Footer />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
 
-          <Route path="/Trendinginternal" element={<Trendinginternal />} />
-          <Route path="/OldSlider" element={<OldSlider />} />
-          <Route path="/Radiointernal" element={<Radiointernal />} />
-        </Route>
-      
-    
-        <Route path="/slider" element={<CustomSlider />} />
-        <Route path="/responsive" element={<ResponsiveSlider />} />
-        <Route path="/RadioSlider" element={<RadioSlider />} />
-        <Route path="/layout" element={<Footer />} />
-                <Route path="/login" element={<Login />} />
-                        <Route path="/signup" element={<Signup />} />
-                           {/* <Route path="/log" element={<Login-1 />} /> */}
-      </Routes>
-    </BrowserRouter>
+          <Route path="/artist" element={<ArtistAll />} />
+          <Route path="/artistadd" element={<ArtistAdd />} />
+          <Route path="/artistedit/:id" element={<ArtistEdit />} />
+       
+
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }

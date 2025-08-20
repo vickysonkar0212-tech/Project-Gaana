@@ -12,16 +12,10 @@ const OldSong = ({trend}) =>{
         
                 <div className="col-4 mt-2">
                 <h2 className="mt-2 ">
-                <img
-                  src={trend.image}
-                  alt={trend.title}
-                
-               
-                />
+                <img src={trend.image} alt={trend.title}/>
                 </h2>
                 </div>
-             
-         
+      
 <div className="col-8  oldsong-top px-5">
 
 <h1 className="mt-2 ">{trend.title}</h1>
@@ -30,11 +24,7 @@ const OldSong = ({trend}) =>{
 <button className="oldsong-btn py-2 mt-3"> <h4 className="mt-2 ">{trend.Author}</h4></button></p>
 </div>
             </div>
-          
- 
-           
-
-        </header>
+     </header>
         <div className="row px-5 mt-5">
             <div className="col oldtrack">
                 Track
@@ -56,31 +46,7 @@ const OldSong = ({trend}) =>{
     <span className="pos-2">
     <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 384 512"><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80L0 432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
     </span>   </div>  <h6 className="px-2"> <span className="Premium "> Premium</span> <b className="fw-bold">Bheegi Bheegi Raato Mein</b></h6>
-     
-
-</div>
-<div className="col text-center oldartist">
-    Kishore Kumar , Lata Mangeshkar
-</div>
-
-<div className="col text-end">
-    03:54
-</div>
-
-</div>
-<hr/>
-
-
-<div className="row px-5 align-items-center">
-<div className="col d-flex align-items-center justify-content-center">
-    <div className="pos-1 ">
-    <img src="https://a10.gaanacdn.com/gn_img/albums/DwPKOkBKqV/wPKORwkbqV/size_xs.jpg"width="50"/>
-   
-    <span className="pos-2">
-    <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 384 512"><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80L0 432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
-    </span>   </div>  <h6 className="px-2"> <span className="Premium "> Premium</span> <b className="fw-bold">Bheegi Bheegi Raato Mein</b></h6>
-     
-
+ 
 </div>
 <div className="col text-center oldartist">
     Kishore Kumar , Lata Mangeshkar
@@ -101,7 +67,6 @@ const OldSong = ({trend}) =>{
     <span className="pos-2">
     <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 384 512"><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80L0 432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
     </span>   </div>  <h6 className="px-2"> <span className="Premium "> Premium</span> <b className="fw-bold">Bheegi Bheegi Raato Mein</b></h6>
-     
 
 </div>
 <div className="col text-center oldartist">
@@ -123,8 +88,7 @@ const OldSong = ({trend}) =>{
     <span className="pos-2">
     <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 384 512"><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80L0 432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
     </span>   </div>  <h6 className="px-2"> <span className="Premium "> Premium</span> <b className="fw-bold">Bheegi Bheegi Raato Mein</b></h6>
-     
-
+ 
 </div>
 <div className="col text-center oldartist">
     Kishore Kumar , Lata Mangeshkar
@@ -145,8 +109,27 @@ const OldSong = ({trend}) =>{
     <span className="pos-2">
     <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 384 512"><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80L0 432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
     </span>   </div>  <h6 className="px-2"> <span className="Premium "> Premium</span> <b className="fw-bold">Bheegi Bheegi Raato Mein</b></h6>
-     
 
+</div>
+<div className="col text-center oldartist">
+    Kishore Kumar , Lata Mangeshkar
+</div>
+<div className="col text-end">
+    03:54
+</div>
+
+</div>
+<hr/>
+
+<div className="row px-5 align-items-center">
+<div className="col d-flex align-items-center justify-content-center">
+    <div className="pos-1 ">
+    <img src="https://a10.gaanacdn.com/gn_img/albums/DwPKOkBKqV/wPKORwkbqV/size_xs.jpg"width="50"/>
+   
+    <span className="pos-2">
+    <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 384 512"><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80L0 432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
+    </span>   </div>  <h6 className="px-2"> <span className="Premium "> Premium</span> <b className="fw-bold">Bheegi Bheegi Raato Mein</b></h6>
+  
 </div>
 <div className="col text-center oldartist">
     Kishore Kumar , Lata Mangeshkar

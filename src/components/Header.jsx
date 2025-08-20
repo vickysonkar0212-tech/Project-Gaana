@@ -1,31 +1,10 @@
-// import React, { useState, useEffect } from "react";
-// import Login from "../pages/auth/Login";
-// import Signup from "../pages/auth/Signup-2"
-// import { Link } from "react-router-dom";
 import Offcanvas from "../pages/auth/Offcanvas";
-// import { useEffect, useState } from "react";
 import { Link,useNavigate } from "react-router-dom";
 
 const Header = ({ theme, setTheme ,user}) => {
 const navigate = useNavigate()
 
-// console.log(user)
-
-
-//   useEffect (() =>{
-//     const StoredUser = localStorage.getItem("user")
-//     if(StoredUser) {
-//       setUser (StoredUser)
-//     }
-//   },[])
-
-//   const handleLogout = () =>{
-//     localStorage.removeItem("token")
-//        localStorage.removeItem("user")
-   
-//  navigate("/login")
-
-//   }
+console.log("ggg",user?.data?.email)
 
 const handleLogout = () => {
 
@@ -150,7 +129,7 @@ const handleLogout = () => {
     </>
   ) : (
     <>
-      <span className="text-dark me-3">👋 {user.email}</span>
+      <span className=" me-3"> {user?.data?.email}</span>
       <button className="login-btn py-2" onClick={handleLogout}>
         Logout
       </button>
@@ -158,56 +137,7 @@ const handleLogout = () => {
   )}
 </li>
 
-         {/* <li className=" px-3 align-items-center "> 
-                       {user ? (
-                        <>
-                              <Link to="/Signup">
-                <button className="login-btn py-2">Sign up</button>
-              </Link>/
-              <Link to="/Login">
-                <button className="login-btn py-2 mx-3 text-center">Login</button>
-              </Link>  
-                             
-                             
-                             
-                        </>
-                       ) : (
-            <>
-           
-                                      <span className="text-dark me-3">👋 {user?.email}</span>
-              <button className="login-btn py-2" onClick={handleLogout}>
-                Logout
-              </button>
-             
-            </>
 
-                       )
-                      }  
-    </li> */}
-                        {/* <b className=" px-3 align-items-center "> 
-                       {!user ? (
-
-                                    <>
-              <Link to="/Signup">
-                <button className="login-btn py-2">Sign up</button>
-              </Link>
-              <Link to="/Login">
-                <button className="login-btn py-2 text-center">Login</button>
-              </Link>
-            </>
-                  
-                       ) : (
-      <>
-                                      <span className="text-white me-3">👋 {user?.email}</span>
-                                      
-              <button className="login-btn py-2" onClick={handleLogout}>
-                Logout
-              </button>
-             
-                        </>
-   )
-                      }  
-    </b> */}
   </ul>
           </div>
           <div className="row ">

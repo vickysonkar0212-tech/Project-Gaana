@@ -4,9 +4,6 @@ const Footer = () => {
     return (
 
         <>
-
-
-
             <div className="container-fluid">
 
                 <div className="row mt-5">
@@ -19,7 +16,6 @@ const Footer = () => {
 
                 <hr />
                 <div className="container">
-
 
                     <div className="row flex-column flex-md-row text-center text-md-start">
                         <div className="col-6 text-end ">

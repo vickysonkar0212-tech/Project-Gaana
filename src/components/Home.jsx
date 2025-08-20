@@ -6,9 +6,7 @@ import Chart from "../data/Chart.json"
 import Most from "../data/Most.json"
 import Top from "../data/Top.json"
 import Featured from "../data/Featured.json"
-// import NewSong from "../data/NewSong.json"
 import New from "../data/New.json"
-// import Old from "../data/Old.json"
 import Romance from "../data/Romance.json"
 import Retro from "../data/Retro.json"
 import Bhakti from "../data/Bhakti.json"
@@ -26,9 +24,7 @@ import Mehfil from "../data/Mehfil.json"
 
 const Home = () => {
 
-    
-
-    return (
+  return (
         <div className="container px-4 ">
             <div className="Customslider ">
                 <CustomSlider />
